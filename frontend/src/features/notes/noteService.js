@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const API_URL = '/api/notes/'
+const API_URL = `${import.meta.env.VITE_API_URL}/api/notes/`
 
 // Create a new note
 const createNote = async (noteData, token) => {

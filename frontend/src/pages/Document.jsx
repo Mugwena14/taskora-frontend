@@ -87,7 +87,7 @@ function Documents() {
 
   const handleDownload = async (doc) => {
     const token = user?.token;
-    const response = await fetch(`/api/documents/${doc._id}`, {
+    const response = await fetch(`${import.meta.env.VITE_API_URL}/api/documents/${doc._id}`, {
       headers: { Authorization: `Bearer ${token}` },
     });
     const blob = await response.blob();

@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const API_URL = '/api/documents/'
+const API_URL = `${import.meta.env.VITE_API_URL}/api/documents/`
 
 // Upload document
 const uploadDocument = async (fileData, token) => {

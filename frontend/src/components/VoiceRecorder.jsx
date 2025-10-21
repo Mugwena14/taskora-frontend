@@ -45,7 +45,7 @@ const VoiceRecorder = ({ user, onRecorded, onClose }) => {
         setIsUploading(true);
 
         try {
-          const res = await fetch("/api/voice", {
+          const res = await fetch(`${import.meta.env.VITE_API_URL}/api/voice`, {
             method: "POST",
             headers: { Authorization: `Bearer ${user.token}` },
             body: formData,

@@ -25,9 +25,13 @@ function SearchPage() {
     setSummary(null);
 
     try {
-      const res = await axios.get(`/api/search?q=${encodeURIComponent(query)}`, {
-        headers: { Authorization: `Bearer ${token}` },
-      });
+      const res = await axios.get(
+        `${import.meta.env.VITE_API_URL}/api/search?q=${encodeURIComponent(query)}`,
+        {
+          headers: { Authorization: `Bearer ${token}` },
+        }
+      );
+
       setResults(res.data.results);
       setSummary(res.data.aiSummary);
     } catch (err) {
