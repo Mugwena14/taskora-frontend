@@ -27,7 +27,7 @@ function App() {
           name="keywords"
           content="task management, langavi clyde makhubele, productivity app, AI summarizer, to-do app, task tracker, notes app, Rexium"
         />
-        <meta name="google-site-verification" content="google7a1d67c6ae7952bc.html" />
+        <meta name="google-site-verification" content="google7a1d67c6ae7952bc" />
       </Helmet>
 
       <Router>
