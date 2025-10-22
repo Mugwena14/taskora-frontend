@@ -61,7 +61,7 @@ function Header() {
               <CheckSquare size={20} className="text-white" />
             </div>
             <h1 className="text-lg font-semibold bg-gradient-to-r from-purple-600 to-indigo-600 bg-clip-text text-transparent">
-              TaskFlow
+              Rexium
             </h1>
           </div>
 
@@ -146,7 +146,7 @@ function Header() {
             <CheckSquare size={20} className="text-white" />
           </div>
           <span className="text-base font-semibold bg-gradient-to-r from-purple-600 to-indigo-600 bg-clip-text text-transparent">
-            TaskFlow
+            Rexium
           </span>
         </div>
 
