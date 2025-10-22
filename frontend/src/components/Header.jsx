@@ -205,7 +205,7 @@ function Header() {
           >
             <User size={16} /> Profile Settings
           </button>
-          <button
+          {/* <button
             onClick={() => {
               navigate("/account");
               setIsMobileMenuOpen(false);
@@ -213,7 +213,7 @@ function Header() {
             className="w-full text-left py-2 px-3 rounded-lg flex items-center gap-2 text-gray-700 hover:bg-gray-100"
           >
             <Settings size={16} /> Account Settings
-          </button>
+          </button> */}
           <button
             onClick={() => {
               onLogout();
